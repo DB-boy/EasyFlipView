@@ -149,7 +149,7 @@ public class EasyFlipView extends FrameLayout {
      */
     public void flipTheView(boolean withAnimation)
     {
-        if (withAnimation == false)
+        if (withAnimation )
         {
             mSetLeftIn.setDuration(0);
             mSetRightOut.setDuration(0);
@@ -195,7 +195,6 @@ public class EasyFlipView extends FrameLayout {
         else {
             return super.onTouchEvent(event);
         }
-        return false;
     }
 
     /**
